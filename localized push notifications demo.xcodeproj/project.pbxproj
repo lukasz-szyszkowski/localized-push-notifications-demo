@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D524F42B25D981980024FA91 /* LanguageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D524F42A25D981980024FA91 /* LanguageController.swift */; };
+		D524F42C25D981980024FA91 /* LanguageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D524F42A25D981980024FA91 /* LanguageController.swift */; };
 		D5307BBB25D291E9002EB900 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5307BBA25D291E9002EB900 /* AppDelegate.swift */; };
 		D5307BBD25D291E9002EB900 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5307BBC25D291E9002EB900 /* SceneDelegate.swift */; };
 		D5307BBF25D291E9002EB900 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5307BBE25D291E9002EB900 /* ViewController.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D524F42325D850FA0024FA91 /* APNS Mutable Content Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "APNS Mutable Content Extension.entitlements"; sourceTree = "<group>"; };
+		D524F42A25D981980024FA91 /* LanguageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageController.swift; sourceTree = "<group>"; };
 		D5307BB725D291E9002EB900 /* localized push notifications demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "localized push notifications demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5307BBA25D291E9002EB900 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5307BBC25D291E9002EB900 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +107,7 @@
 				D5307BC325D291EB002EB900 /* Assets.xcassets */,
 				D5307BC525D291EB002EB900 /* LaunchScreen.storyboard */,
 				D5307BC825D291EB002EB900 /* Info.plist */,
+				D524F42A25D981980024FA91 /* LanguageController.swift */,
 			);
 			path = "localized push notifications demo";
 			sourceTree = "<group>";
@@ -110,6 +115,7 @@
 		D5307BD925D2B05C002EB900 /* APNS Mutable Content Extension */ = {
 			isa = PBXGroup;
 			children = (
+				D524F42325D850FA0024FA91 /* APNS Mutable Content Extension.entitlements */,
 				D5307BDA25D2B05C002EB900 /* NotificationService.swift */,
 				D5307BDC25D2B05C002EB900 /* Info.plist */,
 			);
@@ -219,6 +225,7 @@
 				D5307BBF25D291E9002EB900 /* ViewController.swift in Sources */,
 				D5307BBB25D291E9002EB900 /* AppDelegate.swift in Sources */,
 				D5307BBD25D291E9002EB900 /* SceneDelegate.swift in Sources */,
+				D524F42B25D981980024FA91 /* LanguageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5307BDB25D2B05C002EB900 /* NotificationService.swift in Sources */,
+				D524F42C25D981980024FA91 /* LanguageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,10 +435,12 @@
 		D5307BE125D2B05C002EB900 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "APNS Mutable Content Extension/APNS Mutable Content Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = HU9FKSEQXD;
 				INFOPLIST_FILE = "APNS Mutable Content Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -441,17 +451,19 @@
 				PROVISIONING_PROFILE_SPECIFIER = "APNS Localized Mutable Content Extension Dev";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		D5307BE225D2B05C002EB900 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "APNS Mutable Content Extension/APNS Mutable Content Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = HU9FKSEQXD;
 				INFOPLIST_FILE = "APNS Mutable Content Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,7 +474,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "APNS Localized Mutable Content Extension Dev";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
